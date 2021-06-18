@@ -1,0 +1,240 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kypo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <img src="{% static 'images/logo.png' %}" class="logo" alt="">
+            <div class="header-text">
+                <h1>The Purpose is to<br> teach, bring learning to people</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit recusandae, maxime quam harum ut
+                    repellendus, similique, dignissimos nostrum quo possimus dolore cum dolores et placeat quidem porro
+                    vel incidunt. Enim? Andrew.</p>
+                <button class="common-btn">Read More</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+           
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#courses">COURSES</a></li>
+                <li><a href="#offer">OFFER</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="btn-menu"> <i class="fa fa-bars" onclick="showMenu()"></i></div>
+       
+                
+    </nav>
+
+    <!-- about...... -->
+
+    <section id="about">
+        <div class="about-left-col">
+            <img src="{% static 'images/about.png' %}" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>About US</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere sapiente rem minima! A, tempora fugit. Architecto, accusamus debitis. Laudantium ab corporis maiores fuga porro aut reiciendis, laboriosam commodi magni minus animi illo voluptatem recusandae, iure nam, repellendus facere placeat modi voluptatibus accusamus autem ipsa? Reiciendis quos aliquam tempora porro corrupti in delectus a ipsam nostrum blanditiis facilis architecto, veritatis nam quisquam non culpa! Magni, fugit hic? Impedit, vel harum?</p><br><br>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+                <h2>Learning is not attained by chance, it must be saught for with ardor and attended to with dillegence</h2>
+                <h3>----Abigail Adams</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------features---------- -->
+
+
+    <section id="features">
+        <div class="feature-row">
+            <div class="feature-col">
+                <img src="{% static 'images/pic-1.png' %}" alt="">
+                <h4>Learn Anywhere</h4>
+                <p>Switch between your computer, tableet or mobile devices.</p>
+            </div>
+            <div class="feature-col">
+                <img src="{% static 'images/pic-2.png' %}" alt="">
+                <h4>Expert Teachers</h4>
+                <p>Learn from industries experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature-col">
+                <img src="{% static 'images/pic-3.png' %}" alt="">
+                <h4>Unlimites Access</h4>
+                <p>Choose what you'd like to learn from our extensive subscription library</p>
+            </div>
+        </div>
+        <div class="feature-btn">
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span>
+            </div>
+            <button class="common-btn">Start Free Trial</button>
+        </div>
+    </section>
+
+    <!-- ---------------Courses-------------- -->
+
+    <section id="courses">
+        <div class="container course-row">
+            <div class="course-left-col">
+                <div class="course-text">
+                    <h1>Browse Our Top<br>Courses</h1>
+                    <span class="square"></span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequuntur ex, dolores veritatis tenetur temporibus iste animi libero perferendis cupiditate! Consequuntur suscipit magnam vero saepe, quidem tenetur dolor, tempore iste quasi sunt dolores cumque rerum, porro quo!</p>
+                    <button class="common-btn">View All Courses</button>
+                    <div class="line">
+                        <span class="line-1"></span><br>
+                        <span class="line-2"></span><br>
+                        <span class="line-3"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-right-col">
+                <img src="{% static 'images/course.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------------Offer--------------- -->
+
+    <section id="offer">
+        <div class="about-left-col">
+            <img src="{% static 'images/offer.png' %}" alt="">
+        </div>
+        <div class="about-right-col">
+            <div class="about-text">
+                <h1>Limitless Learning,<br> Limitless Possibilities</h1>
+                <span class="square"></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facere sapiente rem minima! A, tempora fugit. Architecto, accusamus debitis. Laudantium ab corporis maiores fuga porro aut reiciendis, laboriosam commodi magni minus animi illo voluptatem recusandae, </p>
+                <button class="common-btn">Start Free Trail</button>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------Contact------------ -->
+
+    <section id="contact">
+        <div class="container contact-row">
+            <div class="contact-left-col">
+                <h1>Sign Up to join our <br> learning community</h1>
+                <form action="">
+                    <input type="text" name="" placeholder="Enter Name" id="">
+                    <input type="email" name="" placeholder="Enter Email" id="">
+                    <input type="password" name="" placeholder="Enter Password" id="">
+                    <div class="btn-box">
+                        <button class="common-btn">Sign Up</button>
+                        <button class="common-btn">Start Free Trail</button>
+                    </div>
+                </form>
+                <div class="line">
+                    <span class="line-1"></span><br>
+                    <span class="line-2"></span><br>
+                    <span class="line-3"></span>
+                </div>
+            </div>
+            <div class="contact-right-col">
+                <img src="{% static 'images/contact.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ----footer-------- -->
+
+    <section id="footer">
+        <div class="container footer-row">
+            <hr>
+            <div class="footer-left-col">
+                <div class="footer-links">
+                    <div class="link-title">
+                        <h4>Product</h4>
+                        <small>Our Plan</small><br>
+                        <small>Free Trial</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>About-Us</h4>
+                        <small>Request Demo</small><br>
+                        <small>FAQs</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Support</h4>
+                        <small>Features</small><br>
+                        <small>Contact Us</small>
+                    </div>
+                    <div class="link-title">
+                        <h4>Explore</h4>
+                        <small>Find a nonprofit</small><br>
+                        <small>Corporate Solution</small>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-col">
+                <div class="footer-info">
+                    <div class="copyright-text">
+                        <small>support@xypo.com</small><br>
+                        <small>copyright &COPY; 2021 Xypo</small>
+                    </div>
+                    <div class="footer-logo">
+                        <img src="{% static 'images/logo.png' %}" alt="">
+                    <button class="common-btn">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------social icons------ -->
+
+    <div class="social-icons">
+        <img src="{% static 'images/facebook.png' %}" alt="">
+        <img src="{% static 'images/instagram.png' %}" alt="">
+        <img src="{% static 'images/twitter.png' %}" alt="">
+        <img src="{% static 'images/linkedin.png' %}" alt="">
+    </div>
+<!-- --------------------script------------------ -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-250px";
+        }
+    </script>
+</body>
+
+</html>

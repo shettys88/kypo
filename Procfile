@@ -1,0 +1,1 @@
+web: gunicorn statickypo.wsgi --log-file -
